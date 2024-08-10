@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Fun Math Calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-gradient-to-r from-pink-300 to-yellow-200 min-h-screen flex items-center justify-center font-[Comic Neue] text-3xl">
+  
+  <main class="container bg-white p-10 rounded-3xl shadow-2xl w-[90%] max-w-lg mx-auto my-12 text-gray-800">
+    
+    <img src="https://img.freepik.com/free-vector/cartoon-math-word-with-math-symbols_1308-97111.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1723161600&semt=ais_hybrid" alt="Fun Math" class="rounded-lg shadow-md mb-6">
+    
+    <div class="grid grid-cols-[auto_50px_auto] gap-6 text-center items-center mt-10">
+      <!-- First Number -->
+      <select id="first-number" class="border border-pink-400 rounded-full py-4 px-6 text-center font-bold bg-white text-pink-600 hover:bg-pink-100 transition-transform transform hover:scale-110 appearance-none text-2xl">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+      </select>
+
+      <!-- Method -->
+      <select id="method" class="border-2 border-blue-400 rounded-full size-12 text-center bg-white font-bold text-blue-600 hover:bg-blue-100 transition-all hover:scale-110 bg-white appearance-none text-2xl">
+        <option value="+" selected>+</option>
+        <option value="-">-</option>
+        <option value="x">x</option>
+        <option value="/">/</option>
+      </select>
+
+      <!-- Second Number -->
+      <select id="second-number" class="border border-pink-400 rounded-full py-4 px-6 text-center font-bold bg-white text-pink-600 hover:bg-pink-100 transition-transform transform hover:scale-110 appearance-none text-2xl">
+         <option value="0">0</option>
+         <option value="1">1</option>
+         <option value="2">2</option>
+         <option value="3">3</option>
+         <option value="4">4</option>
+         <option value="5">5</option>
+         <option value="6">6</option>
+         <option value="7">7</option>
+         <option value="8">8</option>
+         <option value="9">9</option>
+      </select>
+      
+      <!-- Equal Sign -->
+      <p id="equal-sign" class="font-bold text-3xl col-span-3 mt-4 text-blue-700">=</p>
+      
+      <!-- Result -->
+      <div id="result" class="border-4 border-green-500 rounded-full py-6 text-center font-extrabold col-span-3 bg-white text-green-600 hover:bg-green-100 transition-transform transform hover:scale-110 text-4xl shadow-md">0</div>
+    </div>
+  </main>
+  
+  <script src="main.js"></script>
+</body>
+</html>
